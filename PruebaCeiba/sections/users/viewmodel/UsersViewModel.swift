@@ -34,7 +34,7 @@ class UsersViewModel{
         self.router?.navigateToPostsRouter(userId: userId)
     }
     
-    private func validateGetUsers(){
+    func validateGetUsers(){
         self.users = db.readUsers()
         if users.count == 0 {
             getUsers()
